@@ -1,0 +1,58 @@
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo-container {
+    text-align: center;
+  }
+  
+  .logo {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin: 20px 0;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .sidebar-footer {
+    text-align: center;
+  }
+  
+  .signout-btn {
+    background-color: #090a45;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .signout-btn:hover {
+    background-color: #ff0000;
+  }

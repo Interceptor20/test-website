@@ -1,38 +1,142 @@
-.App {
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.menu {
+  list-style: none;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.menu li {
+  margin: 20px 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.navbar-footer {
+  text-align: center;
+}
+
+.signout-btn {
+  background-color: #090a45;
   color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.signout-btn:hover {
+  background-color: #ff0000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Dashboard Styles */
+.dashboard {
+  margin-left: 250px; /* Account for sidebar width */
+  padding: 20px;
+  background-color: #f0f2f5;
+  height: 100vh;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Widget Section */
+.widgets {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.widget {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.widget h3 {
+  margin: 0;
+  font-size: 30px;
+  color: #090a45;
+}
+
+.widget p {
+  color: #666;
+}
+
+/* Table Section */
+.table-section {
+  margin-top: 20px;
+}
+
+.search-box {
+  margin-bottom: 10px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.request-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.request-table th, .request-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.request-table th {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.request-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.request-table td {
+  background-color: white;
 }
